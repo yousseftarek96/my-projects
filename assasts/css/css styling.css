@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.header{
+    position: fixed; 
+    /* so the nav bar always with me while scrolling */
+    width: 100%;
+    /* so the nav bar always stretches acrros the whole window */
+    background-color: #73268c;
+    /* nav bar color */
+    display: flex;
+    /* activating flexbox */
+    justify-content: space-between;
+    /* flexbox option to make the content has a space betwwen each other */
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo{
+    color: burlywood;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.navigation a{
+    color: burlywood;
+    text-decoration: none;
+    /* so the underline doesnt appear */
+    font-size: 1.1em;
+    /* 1em =16px by defualt */
+    font-weight: 500;
+    /* if we wanted to change the defualt to 20px we make class .body and
+    put in it font-size: 20px; */
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color: white;
+}
+div.main{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(assasts/images/pro.jpg);
+    background-repeat: no-repeat;
+    /* background-size:cover ; */
+    background-position: center;
+    background-attachment: fixed;
+}
+.section h2{
+    color: #8c2640	;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.section h2 span{
+    color: burlywood;
+    font-size: 3.0em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 20px;
+}
+.section h3{
+    color: #8c2640;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.project-btn{
+    color: white;
+    background-color: #8c2640;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 1em 2em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 1s ease;
+    /* the speed of action (hovering) is slower */
+}
+.project-btn:hover{
+    background-color: blueviolet;
+    transform: scale(1.1);
+    /* increasing the size when hovering */
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #c88937;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.card-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #59268c;
+    width: 200px;
+    box-shadow: 0 5px 50px rgba(12, 12, 12, 0.959);
+    /* first value shadow up or down , second value shadow 
+    right or left if left (-), third value blur value 
+    how big the blur */
+    /* rgba red green blue alpha(intinsity of its shadow) */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.icon{
+    color: white;
+    text-align: center;
+    font-size: 90px;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: rgb(231, 156, 156);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+}
+.projects{
+    background-color: rgb(27, 23, 23);
+}
+.projects .card-content{
+    margin-top: 30px;
+}
+.project-card{
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 120px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 20px;
+    transition: 1s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-card:hover .project-image{
+    opacity: 0.9;
+}
+
+.project-image img{
+    width: 100%;
+}
+.project-info{
+    padding: 10px;
+}
+.project-category{
+    color: black;
+    font-size: 12px;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.more-details{
+    color:rgb(231, 156, 156);
+    text-decoration: none;
+}
+.more-details:hover{
+    color: burlywood;
+}
+.footer{
+    background-color:#8c2640 ;
+    color: burlywood;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.social-icons a {
+    color: burlywood;
+    font-size: 1.7em;
+    padding-right: 10px;
+}
